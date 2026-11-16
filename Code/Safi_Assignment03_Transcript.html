@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Academic Transcript</title>
+</head>
+
+<body>
+
+    <header>
+            <h1>UNIVERSITY OF HARIPUR</h1>
+            <h2>STUDENT ACADEMIC TRANSCRIPT</h2>
+            <p>Department of Informaton Technology</p>
+        <hr>
+    </header>
+
+    <main>
+
+        <section>
+            <form>
+
+                <fieldset>
+                    <legend><h2>Student Information</h2></legend>
+
+                    <label>Student Name:</label>
+                    <input type="text" placeholder="Enter your name">
+
+                    <br><br>
+
+                    <label>Registration No:</label>
+                    <input type="text" placeholder="Enter Reg No.">
+
+                    <br><br>
+
+                    <label>Degree Program:</label>
+                    <select>
+                        <option>BS Software Engineering</option>
+                        <option>BS Computer Science</option>
+                    </select>
+
+                    <br><br>
+
+                    <label>Session:</label>
+                    <select>
+                        <option>2022-2026</option>
+                        <option>2021-2025</option>
+                        <option>2020-2024</option>
+                        <option>2019-2023</option>
+                        <option>2018-2022</option>
+                    </select>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend><h2>Academic Record</h2></legend>
+
+                    <label>Select Semester:</label>
+                    <select>
+                        <option>8th Semester</option>
+                        <option>7th Semester</option>
+                        <option>6th Semester</option>
+                    </select>
+
+                    <br><br>
+
+                    <table border="1" cellpadding="8">
+
+                        <thead>
+                            <tr>
+                                <th>Course Code</th>
+                                <th>Subject Name</th>
+                                <th>Credit Hours</th>
+                                <th>Total Marks</th>
+                                <th>Obtained Marks</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>SE401</td>
+                                <td>Final Year Project</td>
+                                <td>6</td>
+                                <td>100</td>
+                                <td>88</td>
+                                <td>A</td>
+                            </tr>
+
+                            <tr>
+                                <td>SE402</td>
+                                <td>Web Engineering</td>
+                                <td>3</td>
+                                <td>100</td>
+                                <td>85</td>
+                                <td>A</td>
+                            </tr>
+
+                            <tr>
+                                <td>SE403</td>
+                                <td>Software Quality Engineering</td>
+                                <td>3</td>
+                                <td>100</td>
+                                <td>82</td>
+                                <td>A</td>
+                            </tr>
+
+                            <tr>
+                                <td>SE404</td>
+                                <td>Information Security</td>
+                                <td>3</td>
+                                <td>100</td>
+                                <td>78</td>
+                                <td>B+</td>
+                            </tr>
+
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <th colspan="2">Total</th>
+                                <th>15</th>
+                                <th>400</th>
+                                <th>333</th>
+                                <th>-</th>
+                            </tr>
+                        </tfoot>
+
+                    </table>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend><h2>Result Summary</h2></legend>
+
+                    <label>Semester GPA:</label>
+                    <input type="number" value="3.50" step="0.01" readonly>
+
+                    <br><br>
+
+                    <label>Overall CGPA:</label>
+                    <input type="number" value="3.18" step="0.01" readonly>
+
+                    <br><br>
+
+                    <label>Final Status:</label>
+                    <select>
+                        <option>Passed</option>
+                        <option>Failed</option>
+                    </select>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend><h2>Declaration</h2></legend>
+
+                    <p>
+                        I hereby declare that the information in this
+                        transcript is correct.
+                    </p>
+
+                    <input type="checkbox" id="confirm" required>
+                    <label for="confirm">I confirm the above information.</label>
+
+                    <br><br>
+
+                    <label>Issue Date:</label>
+                    <input type="date">
+
+                </fieldset>
+
+                <br>
+
+                <center>
+                    <input type="submit" value="Generate Transcript">
+                    <input type="reset" value="Clear Form">
+                </center>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <center>
+            <p>University of Haripur</p>
+            <p>Student Academic Transcript - 2026</p>
+            <p>&copy; All Rights Reserved</p>
+        </center>
+    </footer>
+
+</body>
+</html>
