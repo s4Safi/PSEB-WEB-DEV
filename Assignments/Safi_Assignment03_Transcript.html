@@ -6,14 +6,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Academic Transcript</title>
+    <style>
+        h1,p, h2{
+            text-align:center;
+            background-color: aquamarine;
+        }
+        Legend{
+            color : blue;
+            text-decoration: underline;
+        }
+        .buttons{
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-            <h1>UNIVERSITY OF HARIPUR</h1>
-            <h2>STUDENT ACADEMIC TRANSCRIPT</h2>
-            <p>Department of Informaton Technology</p>
+            <h1 style="text-align: center;">UNIVERSITY OF HARIPUR</h1>
+            <h2 style="text-align: center;">STUDENT ACADEMIC TRANSCRIPT</h2>
+            <p style="text-align: center;">Department of Informaton Technology</p>
         <hr>
     </header>
 
@@ -22,7 +35,7 @@
         <section>
             <form>
 
-                <fieldset>
+                <fieldset >
                     <legend><h2>Student Information</h2></legend>
 
                     <label>Student Name:</label>
@@ -140,12 +153,12 @@
                     <legend><h2>Result Summary</h2></legend>
 
                     <label>Semester GPA:</label>
-                    <input type="number" value="3.50" step="0.01" readonly>
+                    <input type="number" placeholder="Enter GPA" step="0.01">
 
                     <br><br>
 
                     <label>Overall CGPA:</label>
-                    <input type="number" value="3.18" step="0.01" readonly>
+                    <input type="number" placeholder="Enter CGPA" step="0.01">
 
                     <br><br>
 
@@ -178,11 +191,10 @@
                 </fieldset>
 
                 <br>
-
-                <center>
+                <section class="buttons">
                     <input type="submit" value="Generate Transcript">
                     <input type="reset" value="Clear Form">
-                </center>
+                </section>
 
             </form>
         </section>
@@ -191,11 +203,10 @@
 
     <footer>
         <hr>
-        <center>
             <p>University of Haripur</p>
             <p>Student Academic Transcript - 2026</p>
             <p>&copy; All Rights Reserved</p>
-        </center>
+        
     </footer>
 
 </body>
